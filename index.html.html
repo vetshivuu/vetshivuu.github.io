@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🔥 LEGEND NOTES HUB 🔥</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Poppins:wght@300;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <style>
+        :root {
+            --bg: #0f0f1a;
+            --card: #1a1a2e;
+            --accent: #00ff88;
+            --text: #e0e0ff;
+            --glow: 0 0 20px rgba(0, 255, 136, 0.5);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: var(--bg);
+            color: var(--text);
+            min-height: 100vh;
+            background-image: url('https://i.ibb.co.com/0jK7Z8p/notes-bg.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+        }
+
+        .overlay {
+            background: rgba(15, 15, 26, 0.92);
+            min-height: 100vh;
+        }
+
+        header {
+            text-align: center;
+            padding: 60px 20px 30px;
+        }
+
+        h1 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 4.5rem;
+            background: linear-gradient(90deg, #00ff88, #00d0ff, #ff00ff);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: var(--glow);
+        }
+
+        .tagline {
+            font-size: 1.5rem;
+            margin: 15px 0;
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .card {
+            background: var(--card);
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: var(--glow);
+            transition: all 0.4s ease;
+            position: relative;
+            border: 1px solid rgba(0, 255, 136, 0.2);
+        }
+
+        .card:hover {
+            transform: translateY(-15px) scale(1.03);
+            box-shadow: 0 0 40px rgba(0, 255, 136, 0.8);
+        }
+
+        .card-header {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            padding: 25px;
+            text-align: center;
+            font-size: 1.8rem;
+            font-weight: 700;
+        }
+
+        .card-body {
+            padding: 20px;
+        }
+
+        .subject {
+            background: rgba(255, 255, 255, 0.05);
+            margin: 12px 0;
+            padding: 15px;
+            border-radius: 12px;
+            transition: 0.3s;
+            border-left: 4px solid var(--accent);
+        }
+
+        .subject:hover {
+            background: rgba(0, 255, 136, 0.15);
+            padding-left: 25px;
+        }
+
+        .subject a {
+            color: var(--text);
+            text-decoration: none;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 50px 20px;
+            font-size: 1.2rem;
+        }
+
+        .pulse {
+            animation: pulse 3s infinite;
+        }
+
+        @keyframes pulse {
+
+            0%,
+            100% {
+                opacity: 0.8;
+            }
+
+            50% {
+                opacity: 1;
+            }
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 3rem;
+            }
+
+            .tagline {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="overlay">
+        <header>
+            <h1 class="pulse">LEGEND NOTES HUB</h1>
+            <p class="tagline">Jahan Notes Milte Hain Dil Se 💚</p>
+            <p>Sab Semester • Sab Subject • Updated Dec 2025</p>
+        </header>
+
+        <div class="container">
+            <div class="grid">
+                <!-- Semester 1 -->
+                <div class="card">
+                    <div class="card-header">📘 SEM 1</div>
+                    <div class="card-body">
+                        <div class="subject"><a href="Notes/Sem1/Biochemistery.pdf"><i class="fas fa-file-pdf"></i>
+                                Biochemistery</a></div>
+                        <div class="subject"><a href="Notes/Sem1/Animalnutrition.pdf"><i
+                                    class="fas fa-square-root-alt"></i>
+                                Animalnutrition</a></div>
+                        <div class="subject"><a href="Notes/Sem1/Pathology.pdf"><i class="fas fa-flask"></i>
+                                Pathology</a></div>
+                        <div class="subject"><a href="Notes/Sem1/Animalgenetics&breeding.pdf"><i
+                                    class="fas fa-book"></i> Animalgenetics&
+                                breeding</a></div>
+                        <div class="subject"><a href="Notes/Sem1/Microbiology.pdf"><i class="fas fa-code"></i>
+                                Microbiology
+                            </a></div>
+                    </div>
+                </div>
+
+                <!-- Semester 2 -->
+                <div class="card">
+                    <div class="card-header">📗 SEM 2</div>
+                    <div class="card-body">
+                        <div class="subject"><a href="Notes/Sem2/Importanthackss.pdf"><i class="fas fa-sitemap"></i>
+                                Importanthackss
+                            </a></div>
+                        <div class="subject"><a href="Notes/Sem2/Solved PYQ's.pdf"><i class="fas fa-cogs"></i> Solved
+                                PYQ's</a>
+                        </div>
+                        <div class="subject"><a href="Notes/Sem2/Extra material.pdf"><i class="fas fa-calculator"></i>
+                                Extra material</a></div>
+                        <!-- Add more -->
+                    </div>
+                </div>
+
+                <!-- Baki semesters isi tarah add kar dena -->
+                <!-- Copy-paste kar ke SEM 3 to 8 bana lena, maine sirf 2 diye space ke liye -->
+
+            </div>
+        </div>
+
+        <footer>
+            <p>Made with 🔥 & 💚 by <b>[Shivang & Aman ]</b></p>
+            <p>Juniors log star zaroor dena GitHub pe 😎</p>
+        </footer>
+    </div>
+</body>
+
+</html>
