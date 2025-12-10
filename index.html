@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hi">
 
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vet Shivuu - Notes Empire 🐾</title>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Poppins:wght@400;600&display=swap"
+    <title>VET SHIVUU NOTES EMPIRE 🐾</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Poppins:wght@500;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
     <style>
         :root {
-            --bg: #0a0a1a;
-            --card: #1a1a2e;
+            --bg: #0a001f;
+            --card: rgba(20, 20, 50, 0.6);
             --accent: #00ff9d;
-            --text: #e0e0ff;
+            --glow: 0 0 30px rgba(0, 255, 157, 0.6);
         }
 
         * {
@@ -23,100 +23,121 @@
         }
 
         body {
-            background: var(--bg);
-            color: var(--text);
+            background: var(--bg) url('https://i.ibb.co/0jK7Z8p/notes-bg.jpg') fixed center/cover;
+            color: #e0e0ff;
             font-family: 'Poppins', sans-serif;
             min-height: 100vh;
-            background: url('https://i.ibb.co/0jK7Z8p/notes-bg.jpg') fixed center/cover;
         }
 
         .overlay {
-            background: rgba(10, 10, 26, 0.95);
+            background: rgba(10, 0, 35, 0.85);
             min-height: 100vh;
             padding: 20px;
+            backdrop-filter: blur(10px);
         }
 
         header {
             text-align: center;
-            padding: 50px 20px;
+            padding: 60px 20px;
         }
 
         h1 {
             font-family: 'Orbitron', sans-serif;
-            font-size: 4rem;
-            background: linear-gradient(90deg, #00ff9d, #00d0ff);
+            font-size: 4.5rem;
+            background: linear-gradient(90deg, #00ff9d, #00ffff, #ff00ff);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+            text-shadow: var(--glow);
+            animation: pulse 4s infinite;
+        }
+
+        @keyframes pulse {
+
+            0%,
+            100% {
+                opacity: 0.9;
+            }
+
+            50% {
+                opacity: 1;
+            }
         }
 
         .grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 25px;
-            max-width: 1200px;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+            max-width: 1300px;
             margin: 40px auto;
             padding: 0 20px;
         }
 
         .card {
             background: var(--card);
-            border-radius: 20px;
+            border-radius: 25px;
             overflow: hidden;
-            box-shadow: 0 0 20px rgba(0, 255, 157, 0.3);
-            transition: all 0.4s;
-            border: 1px solid rgba(0, 255, 157, 0.2);
+            box-shadow: var(--glow);
+            border: 1px solid rgba(0, 255, 157, 0.3);
+            transition: all 0.5s ease;
+            backdrop-filter: blur(15px);
         }
 
         .card:hover {
-            transform: translateY(-15px);
-            box-shadow: 0 0 40px rgba(0, 255, 157, 0.7);
+            transform: translateY(-20px) scale(1.05);
+            box-shadow: 0 0 60px rgba(0, 255, 157, 0.9);
         }
 
         .card-header {
             background: linear-gradient(135deg, #667eea, #764ba2);
-            padding: 20px;
+            padding: 25px;
             text-align: center;
-            font-size: 1.6rem;
+            font-size: 1.9rem;
             font-weight: 700;
+            letter-spacing: 2px;
         }
 
         .pdf-list {
-            padding: 20px;
+            padding: 25px;
         }
 
         .pdf-item {
-            background: rgba(255, 255, 255, 0.05);
-            margin: 12px 0;
-            padding: 18px;
-            border-radius: 12px;
+            background: rgba(255, 255, 255, 0.08);
+            margin: 15px 0;
+            padding: 20px;
+            border-radius: 16px;
             display: flex;
             align-items: center;
-            gap: 15px;
-            transition: 0.3s;
-            border-left: 5px solid var(--accent);
+            gap: 18px;
+            transition: all 0.4s;
+            border-left: 6px solid var(--accent);
+            backdrop-filter: blur(10px);
         }
 
         .pdf-item:hover {
-            background: rgba(0, 255, 157, 0.15);
-            transform: translateX(10px);
+            background: rgba(0, 255, 157, 0.2);
+            transform: translateX(15px);
+            box-shadow: var(--glow);
         }
 
         .pdf-item a {
-            color: var(--text);
+            color: #e0e0ff;
             text-decoration: none;
             font-weight: 600;
-            font-size: 1.1rem;
+            font-size: 1.2rem;
+            flex: 1;
         }
 
         .pdf-item i {
-            font-size: 1.8rem;
-            color: var(--accent);
+            font-size: 2.2rem;
+            background: linear-gradient(90deg, #00ff9d, #00ffff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
 
         footer {
             text-align: center;
-            padding: 50px;
-            font-size: 1.2rem;
+            padding: 60px 20px;
+            font-size: 1.3rem;
         }
     </style>
 </head>
@@ -125,7 +146,7 @@
     <div class="overlay">
         <header>
             <h1>VET SHIVUU NOTES EMPIRE 🐾</h1>
-            <p>Jahan Notes Milte Hain Dil Se 💚</p>
+            <p>Jahan Notes Milte Hain Dil Se 💚 | Updated Dec 2025</p>
         </header>
 
         <div class="grid">
@@ -133,7 +154,7 @@
             <div class="card">
                 <div class="card-header">📘 SEMESTER 1</div>
                 <div class="pdf-list">
-                    <div class="pdf-item"><a href="Notes/Sem1/Biochemistry.pdf"><i class="fas fa-file-pdf"></i>
+                    <div class="pdf-item"><a href="Notes/Sem1/Biochemistry.pdf"><i class="fas fa-flask"></i>
                             Biochemistry</a></div>
                     <div class="pdf-item"><a href="Notes/Sem1/Animal Nutrition.pdf"><i class="fas fa-utensils"></i>
                             Animal Nutrition</a></div>
@@ -141,7 +162,8 @@
                             Pathology</a></div>
                     <div class="pdf-item"><a href="Notes/Sem1/Microbiology.pdf"><i class="fas fa-bacteria"></i>
                             Microbiology</a></div>
-                    <!-- Add more as needed -->
+                    <div class="pdf-item"><a href="Notes/Sem1/Genetics.pdf"><i class="fas fa-dna"></i> Animal Genetics &
+                            Breeding</a></div>
                 </div>
             </div>
 
@@ -153,15 +175,17 @@
                             Important Hacks</a></div>
                     <div class="pdf-item"><a href="Notes/Sem2/Solved PYQs.pdf"><i class="fas fa-check-circle"></i>
                             Solved PYQs</a></div>
+                    <div class="pdf-item"><a href="Notes/Sem2/Extra Material.pdf"><i class="fas fa-gem"></i> Extra
+                            Material</a></div>
                 </div>
             </div>
 
-            <!-- Baki semesters bhi isi tarah add kar dena -->
+            <!-- Baaki semesters ke liye copy-paste kar lena -->
         </div>
 
         <footer>
-            <p>Made with 🔥 & 💚 by shivang</p>
-            <p>Juniors log star zaroor dena 😎</p>
+            <p>Made with 🔥 & 💚 by <b>shivang</b></p>
+            <p>Juniors log star zaroor dena GitHub pe 😎</p>
         </footer>
     </div>
 </body>
